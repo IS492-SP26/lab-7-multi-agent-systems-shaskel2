@@ -51,7 +51,7 @@ class Config:
     else:
         API_BASE = os.getenv("OPENAI_API_BASE", "https://api.openai.com/v1")
         API_KEY = OPENAI_API_KEY
-        DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4-turbo-preview")
+        DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
     
     # For backward compatibility
     OPENAI_API_BASE = API_BASE

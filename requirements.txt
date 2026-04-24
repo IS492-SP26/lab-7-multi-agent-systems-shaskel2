@@ -3,7 +3,7 @@
 # Install with: pip install -r requirements.txt
 
 # Core Frameworks
-pyautogen>=0.2.0,<0.3.0      # Microsoft AutoGen (stable version with ConversableAgent API)
+ag2[openai]>=0.2.0           # AutoGen framework (Python 3.13-compatible fork of pyautogen)
 crewai>=0.1.0                # CrewAI framework
 crewai-tools>=0.0.1          # CrewAI tools extension
 

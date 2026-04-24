@@ -13,12 +13,13 @@ import os
 from datetime import datetime
 from config import Config
 
-# Try to import AutoGen
+# Try to import AutoGen - requires the 'ag2' package (backward-compatible fork
+# of pyautogen 0.2.x that supports Python 3.13+)
 try:
-    import autogen
+    from autogen import AssistantAgent, UserProxyAgent, GroupChat, GroupChatManager
 except ImportError:
     print("ERROR: AutoGen is not installed!")
-    print("Please run: pip install -r ../requirements.txt")
+    print("Please run: pip install ag2")
     exit(1)
 
 
@@ -44,7 +45,7 @@ class GroupChatInterviewPlatform:
         """Create UserProxyAgent and 4 specialist AssistantAgents"""
 
         # UserProxyAgent acts as the product manager who kicks off the discussion
-        self.user_proxy = autogen.UserProxyAgent(
+        self.user_proxy = UserProxyAgent(
             name="ProductManager",
             system_message="A product manager who initiates the product planning discussion and oversees the collaborative process.",
             human_input_mode="NEVER",
@@ -54,7 +55,7 @@ class GroupChatInterviewPlatform:
         )
 
         # Research Agent - starts the conversation with market analysis
-        self.research_agent = autogen.AssistantAgent(
+        self.research_agent = AssistantAgent(
             name="ResearchAgent",
             # EXERCISE 2 MODIFICATION: Changed focus from AI interview platforms to
             # AI-powered employee onboarding tools, with new competitors (Deel, Rippling, BambooHR)
@@ -75,7 +76,7 @@ Keep your response focused and under 400 words.""",
         )
 
         # Analysis Agent - builds on research to identify opportunities
-        self.analysis_agent = autogen.AssistantAgent(
+        self.analysis_agent = AssistantAgent(
             name="AnalysisAgent",
             system_message="""You are a strategic product analyst with expertise in SaaS product development.
 Your role in this group discussion is to BUILD ON the ResearchAgent's findings.
@@ -94,7 +95,7 @@ Keep your response focused and under 400 words.""",
         )
 
         # Blueprint Agent - designs the product based on opportunities
-        self.blueprint_agent = autogen.AssistantAgent(
+        self.blueprint_agent = AssistantAgent(
             name="BlueprintAgent",
             system_message="""You are an experienced product designer and UX strategist.
 Your role in this group discussion is to DESIGN a product based on the opportunities identified.
@@ -113,7 +114,7 @@ Keep your response focused and under 400 words.""",
         )
 
         # Reviewer Agent - reviews and concludes with strategic recommendations
-        self.reviewer_agent = autogen.AssistantAgent(
+        self.reviewer_agent = AssistantAgent(
             name="ReviewerAgent",
             system_message="""You are a product executive and business strategist.
 Your role in this group discussion is to REVIEW and provide final recommendations.
@@ -131,7 +132,7 @@ After your review, conclude the discussion by ending your message with the word 
         )
 
         # EXERCISE 3: Add CostAnalyst agent between BlueprintAgent and ReviewerAgent
-        self.cost_agent = autogen.AssistantAgent(
+        self.cost_agent = AssistantAgent(
             name="CostAnalyst",
             system_message="""You are a financial analyst. After the BlueprintAgent presents features,
 estimate development costs and timeline for each feature. Provide a cost-benefit ranking.
@@ -143,7 +144,7 @@ Keep your response under 400 words.""",
 
     def _setup_groupchat(self):
         """Create the GroupChat and GroupChatManager"""
-        self.groupchat = autogen.GroupChat(
+        self.groupchat = GroupChat(
             # EXERCISE 3: Added CostAnalyst between BlueprintAgent and ReviewerAgent
             agents=[
                 self.user_proxy,
@@ -157,10 +158,9 @@ Keep your response under 400 words.""",
             max_round=10,  # EXERCISE 3: Increased from 8 to 10 to accommodate new agent
             speaker_selection_method="auto",
             allow_repeat_speaker=False,
-            send_introductions=True,
         )
 
-        self.manager = autogen.GroupChatManager(
+        self.manager = GroupChatManager(
             groupchat=self.groupchat,
             llm_config=self.llm_config,
             is_termination_msg=lambda x: "TERMINATE" in x.get("content", ""),
