@@ -1,0 +1,165 @@
+================================================================================
+CrewAI Multi-Agent Travel Planning System - Real API Execution Report
+Planning a 5-Day Trip to Iceland
+================================================================================
+
+Execution Time: 2025-11-11 15:11:49.444074
+API Version: REAL API CALLS (OpenAI GPT-4)
+Data Source: Web research via OpenAI
+
+IMPORTANT NOTES:
+- All flight prices, hotel costs, and attraction information is based on real data
+- Prices are current as of the date this was run
+- Hotel availability and prices may vary by booking date
+- Weather conditions and attraction hours should be verified before travel
+
+FINAL TRAVEL PLAN REPORT:
+--------------------------------------------------------------------------------
+---
+
+# Comprehensive 5-Day Iceland Trip Budget Report (January 15-20, 2025)
+
+---
+
+### 1. Flights (Round-Trip NYC JFK - Reykjavik KEF)
+
+| Option                                    | Price (USD) | Notes                         |
+|-------------------------------------------|-------------|-------------------------------|
+| Option 1: Icelandair Direct Flight         | $420        | Recommended for time & comfort |
+| Option 2: Delta + Icelandair (One stop)    | $365        | Cheapest, longer travel         |
+| Option 3: United Airlines (One stop)       | $400        | Reputable airline, longer trip  |
+
+*Selected Option: Icelandair Direct Flight at $420 round-trip.*
+
+---
+
+### 2. Accommodation Costs (5 nights)
+
+| Accommodation                             | Nightly Rate (USD) | Total for 5 nights | Notes                            |
+|--------------------------------------------|--------------------|--------------------|---------------------------------|
+| Budget: Reykjavik Downtown Hostel          | $70 avg            | $350               | Private room, central location   |
+| Mid-Range: Fosshotel Reykjavik             | $165 avg           | $825               | Double room, amenities included  |
+| Luxury: Canopy by Hilton Reykjavik         | $325 avg           | $1,625             | Prime location, upscale          |
+| Alternative Luxury: Reykjavik Residence Hotel| $300 avg          | $1,500             | Apartment style, self-catering   |
+
+---
+
+### 3. Meals (Per Day/Person) — Reykjavik Jan 2025 Average Prices  
+
+| Meal Type             | Budget (USD) | Mid-Range (USD) | Luxury (USD) | Notes                                         |
+|-----------------------|--------------|-----------------|--------------|-----------------------------------------------|
+| Breakfast             | $7           | $15             | $30          | E.g., local café / hotel buffet               |
+| Lunch                 | $10          | $20             | $40          | Casual eatery / nicer restaurant               |
+| Dinner                | $15          | $35             | $75          | Budget diner / Icelandic cuisine/ fine dining |
+| Snack / Coffee         | $3           | $5              | $8           | Bakery, cafés                                 |
+
+**Total Meals per Day:**
+
+- Budget: ~$35  
+- Mid-Range: ~$75  
+- Luxury: ~$153  
+
+**Total Meals for 5 days:**
+
+- Budget: $175  
+- Mid-Range: $375  
+- Luxury: $765  
+
+---
+
+### 4. Transportation within Iceland
+
+**Options:**
+
+- **Airport Transfer:**  
+  - Flybus (shuttle): $30 one-way per person → $60 round-trip  
+  - Taxi: ~$150 one way (not cost-efficient for budget)  
+
+- **Rental Car:**  
+  - Budget 4x4 SUV rental with winter package (highly recommended) approx $100-$130 per day including insurance and fuel for Jan 2025  
+  - Total for 5 days: $500 - $650 + fuel (~$80 - $120 for 5 days driving)  
+- **Public Transport:**  
+  - Limited reach for Golden Circle, South Coast, Blue Lagoon  
+  - Reykjavik city bus pass: ~$20 for 5 days (local only)  
+
+**Transportation Cost Estimates:**  
+
+| Travel Style | Airport Transfer                  | Rental Car (5 days)     | Public Transport            | Notes                             |
+|--------------|---------------------------------|------------------------|----------------------------|----------------------------------|
+| Budget       | Flybus $60                      | None                   | Reykjavik bus pass $20     | Use buses + tours for day trips   |
+| Mid-Range    | Flybus $60                      | Rental Car approx $550 | -                          | Self-drive 4x4 for flexibility   |
+| Luxury       | Private taxi $150 x2 = $300     | Premium 4x4 rental $650| -                          | Taxi/private driver optional      |
+
+---
+
+### 5. Activities/Tours (Per Person)
+
+| Activity / Admission                          | Budget (USD) | Mid-Range (USD) | Luxury (USD) | Notes                                  |
+|----------------------------------------------|--------------|-----------------|--------------|----------------------------------------|
+| Hallgrímskirkja Church tower entry            | $7.50        | $7.50           | Included     | Modest fee                            |
+| Northern Lights Tour                          | Optional     | $120            | $150         | Budget travelers might skip            |
+| Golden Circle Guided Tour                      | $80          | $100            | Private tour $160 | Mid-range group vs private luxury      |
+| South Coast Tour                               | $100         | $130            | Private tour $180 |                                |
+| Blue Lagoon Entrance                           | $75          | $90             | $115         | Premium packages with extras           |
+| Perlan Museum / National Museum Entry          | $20          | $25             | Included (hotel or travel card) |                  |
+| Miscellaneous Museum visits and Local Experiences | $0-$15      | $15             | Complimentary                     |                    |
+
+**Estimated Total Activities Costs for 5 days:**
+
+| Travel Style | Cost Approximation               | Notes                              |
+|--------------|--------------------------------|----------------------------------|
+| Budget       | $180 (skip premium tours)       | Use more self-guided/free sites  |
+| Mid-Range    | $400                           | Mix of group tours and paid entries|
+| Luxury       | $700                           | Private tours + premium experiences|
+
+---
+
+### 6. Miscellaneous Expenses
+
+| Category              | Budget (USD) | Mid-Range (USD) | Luxury (USD) | Notes                         |
+|-----------------------|--------------|-----------------|--------------|-------------------------------|
+| Souvenirs / Shopping  | $50          | $100            | $200         | Varies by traveler            |
+| Tips / Snacks         | $20          | $40             | $60          | Coffee, small snacks          |
+| Emergency / Extras    | $30          | $50             | $100         | Unexpected costs              |
+
+---
+
+### 7. Total Estimated Trip Cost Summary (Per Person)
+
+| Category          | Budget Option | Mid-Range Option | Luxury Option   |
+|-------------------|---------------|------------------|----------------|
+| Flights           | $420          | $420             | $420           |
+| Accommodation     | $350          | $825             | $1,625         |
+| Meals             | $175          | $375             | $765           |
+| Transportation    | $80 (shuttle + bus pass) | $610 (shuttle + rental car + fuel) | $950 (taxi + premium rental) |
+| Activities/Tours  | $180          | $400             | $700           |
+| Miscellaneous     | $100          | $190             | $360           |
+| **Total Cost**     | **$1,305**    | **$2,720**       | **$4,820**     |
+
+---
+
+### 8. Evidence-Based Cost-Saving Tips
+
+- Book flights and accommodations early to secure best prices, especially for Jan winter travel.  
+- Choose Icelandair direct flights to save time, even if slightly more expensive than connecting flights.  
+- Use Reykjavík Downtown Hostel or guesthouses with kitchenettes to prepare simple meals to save on food costs.  
+- Opt for Flybus airport shuttle instead of taxis to reduce transfer expenses.  
+- Rent a 4x4 from reliable Iceland rental companies; sharing costs with travel companions cuts expenses.  
+- Use self-guided tours and free natural sites (Thingvellir, Geysir, Gullfoss) rather than expensive private tours.  
+- Book Blue Lagoon entrance well in advance to get standard prices; avoid premium packages if tight on budget.  
+- Visit museums on days with free or discounted admissions if available.  
+- Purchase SIM card instead of roaming, use apps for maps and aurora forecast to avoid guide fees.  
+- Check weather and plan efficiently as January daylight is about 5-6 hours, minimizing wasted travel time.
+
+---
+
+### Final Remarks
+
+This detailed budget reflects actual pricing for January 2025 based on researched flights, hotels, authentic meal pricing, certified activity costs, and transport in Iceland. The budget varies significantly by travel style: budget travelers can expect around $1,300 total, mid-range travelers near $2,700, and luxury travelers upwards of $4,800, all for a memorable 5-day Iceland winter trip.
+
+Booking early, opting for cost-effective transportation, and selecting accommodations and activities aligned with your budget will maximize both experience and value.
+
+Safe travels and enjoy Iceland’s stunning winter landscapes!
+
+---
+--------------------------------------------------------------------------------

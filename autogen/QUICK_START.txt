@@ -1,0 +1,87 @@
+================================================================================
+        AutoGen GroupChat Demo - QUICK START GUIDE
+================================================================================
+
+STEP 1: SET YOUR API KEY
+========================
+# Ensure .env is configured in the parent directory (../.env):
+OPENAI_API_KEY=sk-your-actual-api-key-here
+
+(Get your key from: https://platform.openai.com/account/api-keys)
+
+
+STEP 2: INSTALL DEPENDENCIES
+==============================
+pip install -r ../requirements.txt
+
+
+STEP 3: RUN THE DEMO
+======================
+# From the project root:
+python autogen/autogen_simple_demo.py
+
+Takes: ~1-3 minutes
+Shows: Multi-agent GroupChat conversation (agents talking to each other)
+Creates: groupchat_output_*.txt with full transcript
+
+
+STEP 4: CHECK YOUR OUTPUT
+==========================
+ls -la autogen/groupchat_output_*.txt
+cat autogen/groupchat_output_*.txt
+
+
+WHAT YOU'LL SEE
+===============
+
+A GroupChat conversation where agents collaborate:
+
+  [ProductManager]: kicks off the discussion
+  [ResearchAgent]: analyzes competitors (HireVue, Pymetrics, Codility)
+  [AnalysisAgent]: identifies 3 market opportunities
+  [BlueprintAgent]: designs features and user journey
+  [ReviewerAgent]: provides strategic recommendations, says TERMINATE
+
+The GroupChatManager selects who speaks next using the LLM.
+Speaker order is emergent, not hardcoded.
+
+
+TROUBLESHOOTING
+===============
+
+"ModuleNotFoundError: No module named 'autogen'"
+  pip install pyautogen
+
+"Invalid API key" error
+  Check ../.env has OPENAI_API_KEY=sk-...
+
+"Rate limit exceeded"
+  Wait 60 seconds and try again
+
+"ModuleNotFoundError: No module named 'shared_config'"
+  Run from project root, not from autogen/ directory
+
+
+FILES
+=====
+autogen_simple_demo.py   - GroupChat demo (run this)
+config.py                - Configuration (extends shared_config)
+README.md                - Full documentation
+
+
+CUSTOMIZATION
+=============
+
+Change the topic:
+  Edit autogen_simple_demo.py -> initial_message
+
+Change agent behavior:
+  Edit autogen_simple_demo.py -> system_message in _create_agents()
+
+Change the model:
+  Edit ../.env -> OPENAI_MODEL=gpt-3.5-turbo
+
+
+================================================================================
+Ready? Run: python autogen/autogen_simple_demo.py
+================================================================================
